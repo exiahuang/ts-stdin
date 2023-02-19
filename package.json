@@ -1,0 +1,15 @@
+{
+  "name": "ts-stdin",
+  "version": "1.0.0",
+  "description": "get stdin",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build ./tsconfig.json"
+  },
+  "keywords": [],
+  "author": "exia.huang",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.14.0"
+  }
+}
