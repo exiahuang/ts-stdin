@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc --build ./tsconfig.json",
     "lint": "eslint --ext .ts src/",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "echo test"
   },
   "author": "exia.huang",
   "license": "MIT",
