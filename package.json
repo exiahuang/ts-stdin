@@ -2,14 +2,43 @@
   "name": "ts-stdin",
   "version": "1.0.0",
   "description": "get stdin",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc --build ./tsconfig.json"
+    "build": "tsc --build ./tsconfig.json",
+    "lint": "eslint --ext .ts src/",
+    "prepare": "husky install"
   },
-  "keywords": [],
   "author": "exia.huang",
   "license": "MIT",
+  "homepage": "https://github.com/exiahuang/ts-stdin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exiahuang/ts-stdin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/exiahuang/issues"
+  },
+  "keywords": [
+    "ts-stdin",
+    "get-stdin",
+    "stdin"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "devDependencies": {
-    "@types/node": "^18.14.0"
+    "@types/node": "^18.14.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write"
+    ]
   }
 }
