@@ -22,7 +22,7 @@ jobs:
       #     GITHUB_TOKEN: ${{secrets.GIT_HUB_TOKEN}}
       #   run: npx changelogithub
 
-      - run: npm run install
+      - run: npm install
 
       - run: npm run build
 
