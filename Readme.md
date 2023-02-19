@@ -17,8 +17,8 @@ console.log(await getStdin());
 
 ## License
 
-MIT License
+- MIT License
 
 ## Acknowledgement
 
-- [get-stdin](https://github.com/sindresorhus/get-stdin)
+- ts-stdin is base on [get-stdin](https://github.com/sindresorhus/get-stdin)
