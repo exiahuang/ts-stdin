@@ -18,9 +18,9 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
 
-      - env:
-          GITHUB_TOKEN: ${{secrets.GIT_HUB_TOKEN}}
-        run: npx changelogithub
+      # - env:
+      #     GITHUB_TOKEN: ${{secrets.GIT_HUB_TOKEN}}
+      #   run: npx changelogithub
 
       - run: npm install
 
